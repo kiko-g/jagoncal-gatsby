@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        ice: '#e8ebf5', // dce4f0
+        ice: '#ebf0f8', // dce4f0
         navy: '#18222e',
         dark: '#252832',
         darker: '#1e2028',
@@ -14,9 +14,9 @@ module.exports = {
         light: '#f2f4f7',
         lighter: '#f7f7f7',
         lightest: '#ffffff',
-        primary: '#124c8e',
-        secondary: '#149ddd',
-        tertiary: '#9f7aea',
+        primary: '#205B5E',
+        secondary: '#457797',
+        tertiary: '#479A9E',
       },
       maxWidth: {
         screen: '100vw',
