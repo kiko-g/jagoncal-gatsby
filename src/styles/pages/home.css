@@ -43,11 +43,11 @@
 }
 
 .home .markdown ol {
-  @apply mt-5 mb-7;
+  @apply mt-2 mb-2;
 }
 
 .home .markdown ul {
-  @apply ml-5 mb-4 mt-2 list-disc;
+  @apply ml-5 mb-2 mt-2 list-disc;
 }
 
 .home .markdown blockquote {

@@ -5,7 +5,7 @@ import { Link } from 'gatsby'
 import { Disclosure } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 
-const fullName = process.env.GATSBY_FULL_NAME
+const fullName = process.env.GATSBY_NAME
 const avatarPath = '/images/avatar.jpg'
 const navigation = [
   { title: 'Home', location: '/' },

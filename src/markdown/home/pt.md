@@ -2,8 +2,6 @@
 language: pt
 ---
 
-## Apresentação
-
 Docente na Faculdade de Ciências da Universidade do Porto ([FCUP](https://fc.up.pt)), Departmento de Geociências, Ambiente e Ordenamento do Território (DGAOT), e investigador do [CIIMAR](https://www2.ciimar.up.pt) (Centro Interdiciplinar de Investigação Marinha e Ambiental), no grupo [Monitorização e Gestão Costeira](https://www2.ciimar.up.pt/research.php?team=4). Doutoramento em Fotogrametria (2001) e Mestrado em GIS (1993) no [University College London](https://www.ucl.ac.uk/), **Departamento de Engenharia Geomática, e Licenciatura em Engenharia Geográfica na FCUP**.
 
 ## Ensino

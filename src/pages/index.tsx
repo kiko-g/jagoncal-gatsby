@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
 import { Layout, Seo, PageVisits } from '../layout'
-import usePageVisits from '../hooks/usePageVisits'
 import { TranslateIcon } from '@heroicons/react/outline'
 import '../styles/pages/home.css'
 
@@ -10,23 +9,25 @@ const HomePage = ({
     allMarkdownRemark: { edges },
   },
 }) => {
-  const [language, setLanguage] = useState('en')
-  const domainVisits = usePageVisits('')
+  const email = process.env.GATSBY_EMAIL || 'jagoncal@fc.up.pt'
+  const linkedinId = process.env.GATSBY_LINKEDIN || 'jose-alberto-gon%C3%A7alves-55aba917'
 
   const links = [
     {
       name: 'Linkedin',
-      href: 'https://www.linkedin.com/in/jose-alberto-gon%C3%A7alves-55aba917/',
+      href: 'https://www.linkedin.com/in/${linkedinId}',
     },
     {
-      name: 'Linkedin',
-      href: 'https://linkedin.com/in/josealbertogoncalves',
+      name: 'Resume',
+      href: 'https://google.com',
     },
     {
-      name: 'Linkedin',
-      href: 'https://linkedin.com/in/josealbertogoncalves',
+      name: 'Email',
+      href: `mailto:${email}`,
     },
   ]
+
+  const [language, setLanguage] = useState('en')
 
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'pt' : 'en')
