@@ -4,8 +4,11 @@ import { Layout, Seo } from '../layout'
 import { PortfolioEntry } from '../components/porfolio'
 import '../styles/pages/portfolio.css'
 
-// prettier-ignore
-const PortfolioPage = ({ data: { allMarkdownRemark: { edges } } }) => {
+const PortfolioPage = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
   return (
     <Layout location="Portfolio">
       <Seo title="Portfolio" />

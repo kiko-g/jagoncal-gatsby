@@ -1,3 +1,59 @@
 .home {
   @apply container mx-auto flex-1 flex-col justify-between space-y-6 px-4 py-4 2xl:px-0;
 }
+
+.home .markdown {
+  @apply mx-auto flex w-full flex-col justify-between font-normal;
+}
+
+.home .markdown a {
+  @apply font-semibold text-primary transition hover:underline hover:opacity-90 dark:text-tertiary;
+}
+
+.home .markdown p {
+  @apply mb-2 text-justify;
+}
+
+.home .markdown h1,
+.home .markdown h2,
+.home .markdown h3,
+.home .markdown h4 {
+  @apply py-1 font-medium;
+}
+
+.home .markdown h1 {
+  @apply mt-4 mb-2 py-1 text-4xl font-bold md:mt-8 md:mb-4;
+}
+
+.home .markdown h2 {
+  @apply mt-3 mb-1.5 py-1 text-3xl;
+}
+
+.home .markdown h3 {
+  @apply mt-2 mb-1 py-1 text-2xl;
+}
+
+.home .markdown h4 {
+  @apply mt-1 mb-0.5 py-1 text-xl;
+}
+
+.home .markdown ol {
+  @apply mt-5 mb-7;
+}
+
+.home .markdown ul {
+  @apply ml-5 mb-4 mt-2 list-disc;
+}
+
+.home .markdown blockquote {
+  @apply my-8 rounded border-l-4 border-primary bg-light py-1 pl-4 font-medium text-gray-800 
+  dark:border-tertiary dark:bg-ice/5 dark:text-white;
+}
+
+.home .markdown img {
+  @apply w-full rounded-xl border-0 bg-transparent shadow;
+}
+
+.home .markdown .gatsby-resp-image-wrapper {
+  margin: 2rem 0 !important;
+}
