@@ -1,0 +1,115 @@
+/* Portfolio Page */
+.portfolio {
+  @apply container mx-auto flex-1 flex-col justify-between space-y-6 px-4 py-4 2xl:px-0;
+}
+
+.portfolio > header {
+  @apply mt-2;
+}
+
+.portfolio > header > h2 {
+  @apply text-4xl font-extrabold tracking-tight sm:text-5xl;
+}
+
+.portfolio > header > p {
+  @apply mt-4 text-lg font-normal;
+}
+
+.portfolio > article {
+  @apply grid grid-cols-1 gap-6;
+}
+
+/* Portfolio Entry Card */
+.portfolio .entry {
+  @apply flex w-full flex-col space-y-3 rounded-xl bg-lightest p-3 shadow dark:bg-white/5 lg:flex-row lg:space-y-0;
+}
+
+.portfolio .entry > aside {
+  @apply relative rounded-l-xl md:rounded-xl;
+}
+
+.portfolio .entry > aside .image {
+  @apply h-full w-auto max-w-full rounded-xl object-contain lg:max-w-2xl lg:rounded-none lg:rounded-l-xl;
+}
+
+.portfolio .entry > aside .video {
+  @apply h-full w-auto max-w-full rounded-xl object-contain lg:max-w-2xl lg:rounded-none lg:rounded-l-xl;
+}
+
+.portfolio .entry > aside .video-inner {
+  @apply rounded-xl lg:rounded-none lg:rounded-l-xl;
+}
+
+.portfolio .entry > aside .dummy {
+  @apply h-64 w-full rounded-xl bg-gradient-to-br from-tertiary via-indigo-400 to-secondary shadow lg:h-full lg:w-80;
+}
+
+.portfolio .entry > aside .pinned {
+  @apply absolute top-2 left-2 rounded-full bg-gradient-to-br from-tertiary via-indigo-400 to-secondary 
+  p-1 text-xs leading-none text-white;
+}
+
+.portfolio .entry > section {
+  @apply relative flex w-auto grow flex-col justify-between space-y-6 rounded-r-xl px-1 py-1 text-base font-normal 
+  lg:h-auto lg:max-h-full lg:w-3/4 lg:py-0 lg:pl-4 lg:pr-0;
+}
+
+.portfolio .entry > section > .core {
+  @apply flex flex-col;
+}
+
+.portfolio .entry > section > .core > header {
+  @apply mb-0;
+}
+
+.portfolio .entry > section > .core > header > .title {
+  @apply text-xl font-semibold uppercase tracking-wide text-primary dark:text-tertiary;
+}
+
+.portfolio .entry > section > .core > header > .subheader {
+  @apply font-medium tracking-tighter;
+}
+
+.portfolio .entry > section > .core > header > .description {
+  @apply font-medium tracking-tight text-gray-600 dark:text-white;
+}
+
+.portfolio .entry > section > .core > .body {
+  @apply space-y-3;
+}
+
+.portfolio .entry > section > .core > .body > .tech-stack {
+  @apply mt-2 flex flex-wrap gap-2;
+}
+
+.portfolio .entry > section > .core > .body > .tech-stack > span {
+  @apply rounded bg-primary px-2 py-1 text-xs font-medium lowercase tracking-wide text-white shadow dark:bg-tertiary;
+}
+
+.portfolio .entry > section > .core > .body > .content {
+  @apply my-2;
+}
+
+.portfolio .entry > section > .links {
+  @apply absolute top-1 right-1 space-x-2 rounded-xl lg:top-0 lg:right-0 xl:flex;
+  margin-top: 0 !important;
+}
+
+.portfolio .entry > section > .links > .external {
+  @apply inline-flex items-center space-x-2 rounded bg-slate-700 p-1 text-center text-sm font-medium text-white transition
+  hover:bg-slate-500 dark:bg-lightest dark:text-slate-700 dark:hover:bg-gray-200 sm:p-2;
+}
+
+.portfolio .entry ul,
+.portfolio .entry ol {
+  @apply ml-4 list-disc;
+}
+
+.portfolio .entry li {
+  @apply list-item;
+}
+
+.portfolio .entry .body a,
+.portfolio .entry .subheader a {
+  @apply font-semibold text-primary transition hover:underline hover:opacity-90 dark:text-tertiary;
+}
