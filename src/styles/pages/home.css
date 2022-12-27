@@ -1,5 +1,5 @@
 .home {
-  @apply container mx-auto flex-1 flex-col justify-between space-y-6 px-4 py-4 2xl:px-0;
+  @apply container mx-auto flex flex-1 flex-col justify-between gap-y-4;
 }
 
 .home .markdown {
@@ -7,34 +7,39 @@
 }
 
 .home .markdown a {
-  @apply font-semibold text-primary transition hover:underline hover:opacity-90 dark:text-tertiary;
+  @apply text-primary font-semibold transition hover:underline hover:opacity-90 dark:text-tertiary;
 }
 
 .home .markdown p {
-  @apply mb-2 text-justify;
+  @apply mb-2 text-left lg:text-justify;
 }
 
 .home .markdown h1,
 .home .markdown h2,
 .home .markdown h3,
-.home .markdown h4 {
-  @apply py-1 font-medium;
+.home .markdown h4,
+.home .markdown h5 {
+  @apply font-semibold;
 }
 
 .home .markdown h1 {
-  @apply mt-4 mb-2 py-1 text-4xl font-bold md:mt-8 md:mb-4;
+  @apply mt-5 mb-2 text-4xl font-bold md:mt-8 md:mb-4;
 }
 
 .home .markdown h2 {
-  @apply mt-3 mb-1.5 py-1 text-3xl;
+  @apply mt-4 mb-1.5 text-3xl;
 }
 
 .home .markdown h3 {
-  @apply mt-2 mb-1 py-1 text-2xl;
+  @apply mt-3 mb-1 text-2xl;
 }
 
 .home .markdown h4 {
-  @apply mt-1 mb-0.5 py-1 text-xl;
+  @apply mt-2 mb-0.5 text-xl;
+}
+
+.home .markdown h5 {
+  @apply mt-1 mb-0 text-lg;
 }
 
 .home .markdown ol {

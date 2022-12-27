@@ -116,7 +116,7 @@
 }
 
 .journal-entry p {
-  @apply text-justify;
+  @apply text-left lg:text-justify;
 }
 
 .journal-entry h1,

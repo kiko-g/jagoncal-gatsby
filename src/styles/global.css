@@ -14,9 +14,19 @@ code {
   @apply rounded-md px-1 font-code text-pink-600;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-headings;
+}
+
 /* Generic */
+/* text-[#0a66c2] */
 .link {
-  @apply font-medium text-[#0a66c2] transition hover:underline hover:opacity-90 dark:text-tertiary;
+  @apply font-medium text-primary transition hover:underline hover:opacity-90 dark:text-tertiary;
 }
 
 .min-h-adjusted {
@@ -25,13 +35,4 @@ code {
 
 .avatar {
   @apply rounded-full transition hover:opacity-80 md:hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-headings;
 }
