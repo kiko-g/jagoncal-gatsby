@@ -11,6 +11,7 @@ const navigation = [
   { title: 'Home', location: '/' },
   { title: 'Journal', location: '/journal' },
   { title: 'Portfolio', location: '/portfolio' },
+  { title: 'Another', location: '/another' },
 ]
 
 type Props = {

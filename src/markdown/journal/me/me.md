@@ -1,6 +1,6 @@
 ---
 pinned: true
-date: 2023-02-01
+date: 2022-12-27
 slug: /journal/me
 title: Who am I?
 featuredImage: ./featured.jpg
