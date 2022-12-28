@@ -16,7 +16,7 @@
 }
 
 .portfolio > article {
-  @apply grid grid-cols-2 gap-4;
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-4;
 }
 
 /* Portfolio Entry Card */
