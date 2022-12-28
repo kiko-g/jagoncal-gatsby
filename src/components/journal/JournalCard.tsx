@@ -27,9 +27,9 @@ const JournalCard = ({ post }: Props) => {
     >
       <header>
         {coverImage ? (
-          <GatsbyImage image={coverImage} alt="cover" className="h-64 w-full rounded-lg object-contain" />
+          <GatsbyImage image={coverImage} alt="cover" className="h-48 w-full rounded-lg object-contain" />
         ) : (
-          <div className="h-64 w-full rounded-lg bg-gradient-to-br from-tertiary via-indigo-400 to-secondary shadow" />
+          <div className="h-48 w-full rounded-lg bg-gradient-to-br from-teal-500 via-teal-700 to-teal-800" />
         )}
 
         {post.frontmatter.pinned && (

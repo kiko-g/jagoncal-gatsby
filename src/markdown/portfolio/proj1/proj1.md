@@ -5,7 +5,7 @@ startDate: 2012-03-01
 endDate: 2014-06-15
 external: https://robinlgp.netlify.app
 featuredImage: ./featured.png
-featuredVideo: https://robinlgp.netlify.app/static/change-resource-state-auto-0acbdbc8d8cce72094f83810c41c7a4c.mp4
+featuredVideo: https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4
 description: Project 1 Description
 ---
 

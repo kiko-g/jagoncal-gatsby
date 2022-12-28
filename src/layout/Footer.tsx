@@ -14,7 +14,7 @@ const Footer = ({ title, location }: Props) => {
   const domainVisits = usePageVisits('')
 
   return (
-    <footer className="z-10 flex items-center justify-between p-2 text-xs text-gray-600 opacity-80 dark:text-gray-200 md:p-3 md:text-sm">
+    <footer className="z-10 flex h-12 items-center justify-between p-2 text-xs text-gray-600 opacity-80 dark:text-gray-200 md:p-3 md:text-sm">
       <div>
         {title}, {year} | {profession}
       </div>
