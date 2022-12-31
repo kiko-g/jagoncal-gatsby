@@ -19,11 +19,9 @@ const PortfolioPage = ({
         </header>
 
         <article>
-          {nodes
-            .filter((node: { frontmatter: { startDate: any } }) => !!node.frontmatter.startDate)
-            .map((node: { id: React.Key }, nodeIdx: number) => (
-              <PortfolioEntry key={`project-${node.id}`} project={node} />
-            ))}
+          {nodes.map((node: { id: React.Key }, nodeIdx: number) => (
+            <PortfolioEntry key={`project-${node.id}`} project={node} />
+          ))}
         </article>
       </main>
     </Layout>

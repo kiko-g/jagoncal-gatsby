@@ -1,8 +1,8 @@
 ---
 pinned: true
 title: Project 1 Name
-startDate: 2012-03-01
-endDate: 2014-06-15
+startDate: null
+endDate: null
 external: https://robinlgp.netlify.app
 featuredImage: ./featured.png
 featuredVideo: https://storage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4

@@ -28,9 +28,16 @@ const HomePage = ({
   ]
 
   const [language, setLanguage] = useState('en')
+  const [languageFlagEmoji, setLanguageFlagEmoji] = useState('🇬🇧')
 
   const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'pt' : 'en')
+    if (language === 'en') {
+      setLanguage('pt')
+      setLanguageFlagEmoji('🇵🇹')
+    } else {
+      setLanguage('en')
+      setLanguageFlagEmoji('🇬🇧')
+    }
   }
 
   return (
@@ -52,9 +59,15 @@ const HomePage = ({
               ))}
             </ul>
           </div>
-          <button onClick={toggleLanguage} className="rounded p-2 transition hover:opacity-80">
-            <LanguageIcon className="h-6 w-6 text-primary dark:text-tertiary" />
-            <span>{language}</span>
+          <button
+            onClick={toggleLanguage}
+            className="flex flex-col items-center rounded p-2 transition hover:opacity-70"
+          >
+            <LanguageIcon className="h-10 w-10 rounded-full p-1 font-bold text-primary transition dark:text-tertiary" />
+            <div className="flex items-center gap-x-1">
+              <span>{language}</span>
+              <span>{languageFlagEmoji}</span>
+            </div>
           </button>
         </header>
 

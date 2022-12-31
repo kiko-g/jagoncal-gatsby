@@ -2,7 +2,7 @@
 pinned: false
 title: Project 2 Name
 startDate: 2020-08-21
-endDate: 2023-07-30
+endDate: null
 external: https://robinlgp.netlify.app
 featuredImage: ./featured.png
 featuredVideo: null

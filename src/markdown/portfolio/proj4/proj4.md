@@ -1,8 +1,6 @@
 ---
 pinned: false
 title: Project 4 Name
-startDate: 2018-08-21
-endDate: 2019-07-30
 external: https://robinlgp.netlify.app
 featuredImage: ./featured.png
 featuredVideo: null

@@ -10,7 +10,12 @@ const PortfolioEntry = ({ project }: Props) => {
   const info = project.frontmatter
   const content = project.html
   const coverImage = getImage(info.featuredImage)
-  const dates = info.startDate === info.endDate ? info.startDate : `${info.startDate} - ${info.endDate ?? 'Present'}`
+  const dates =
+    info.startDate === null && info.endDate === null // no dates provided
+      ? null // don't show dates
+      : info.startDate === info.endDate // same start and end date
+      ? info.startDate // start date must exist
+      : `${info.startDate} - ${info.endDate ?? 'Present'}` // display start and end date
 
   return (
     <div className="entry">
@@ -38,9 +43,11 @@ const PortfolioEntry = ({ project }: Props) => {
         <div className="core">
           <header>
             <div className="title">{info.title}</div>
-            <div className="subheader">
-              <span>{dates}</span>
-            </div>
+            {dates === null ? null : (
+              <div className="subheader">
+                <span>{dates}</span>
+              </div>
+            )}
             <span className="description">{info.description}</span>
           </header>
 
