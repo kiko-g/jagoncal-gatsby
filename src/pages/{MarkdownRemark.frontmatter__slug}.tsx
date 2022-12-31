@@ -2,9 +2,9 @@ import React from 'react'
 import { Layout, Seo } from '../layout'
 import { graphql, Link } from 'gatsby'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import '../styles/pages/journal.css'
+import '../styles/pages/journalpage.css'
 
-export default function Template({ data }) {
+export default function JournalPage({ data }) {
   const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
   const coverImage = getImage(frontmatter.featuredImage)
@@ -12,7 +12,7 @@ export default function Template({ data }) {
   return (
     <Layout location={frontmatter.title}>
       <Seo title={frontmatter.title} />
-      <main className="journal-entry">
+      <main className="journalpage">
         <header>
           <h1>{frontmatter.title}</h1>
           <div>
@@ -21,7 +21,7 @@ export default function Template({ data }) {
           </div>
         </header>
 
-        <article dangerouslySetInnerHTML={{ __html: html }} />
+        <article className="markdown" dangerouslySetInnerHTML={{ __html: html }} />
 
         <footer>
           <span>{frontmatter.title}</span>

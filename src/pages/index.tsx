@@ -64,7 +64,11 @@ const HomePage = ({
           .map((node: any, nodeIdx: number) => {
             const content = node.html
             return (
-              <article key={`article-${nodeIdx}`} className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
+              <article
+                key={`article-${nodeIdx}`}
+                className="markdown bg-lightest px-4 py-4 dark:bg-gray-800"
+                dangerouslySetInnerHTML={{ __html: content }}
+              />
             )
           })}
       </main>

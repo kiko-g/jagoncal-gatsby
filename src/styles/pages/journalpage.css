@@ -1,0 +1,81 @@
+.journalpage {
+  @apply mx-auto flex w-full flex-col justify-between p-4 px-4 pb-28 font-normal sm:mt-16 sm:px-6 md:px-8 xl:max-w-7xl xl:px-12;
+}
+
+.journalpage article {
+  @apply rounded bg-lightest px-2 py-2 text-gray-800 dark:bg-gray-800 dark:text-light lg:px-4 lg:py-4;
+}
+
+.journalpage article a {
+  @apply font-semibold text-tertiary transition hover:underline hover:opacity-90 dark:text-tertiary;
+}
+
+.journalpage article p {
+  @apply text-left lg:text-justify;
+}
+
+.journalpage article h1 {
+  @apply mt-6 mb-2 py-1 text-4xl md:mt-8 md:mb-4;
+}
+
+.journalpage article h2 {
+  @apply mt-7 mb-4 py-1 text-3xl;
+}
+
+.journalpage article h3 {
+  @apply mt-6 mb-3 py-1 text-2xl;
+}
+
+.journalpage article h4 {
+  @apply mt-5 mb-2 py-1 text-xl;
+}
+
+.journalpage article .gatsby-resp-image-wrapper {
+  @apply my-3;
+}
+
+.journalpage article ul,
+.journalpage article ol {
+  @apply mt-5 mb-7;
+}
+
+.journalpage article blockquote {
+  @apply my-8 rounded border-l-4 border-primary bg-light py-1 pl-4 font-medium text-gray-800 
+  dark:border-tertiary dark:bg-ice/5 dark:text-white;
+}
+
+.journalpage header {
+  @apply mb-2 py-3 text-[2rem] font-bold tracking-tight;
+}
+
+.journalpage header h1 {
+  @apply text-3xl font-extrabold tracking-tight text-gray-700 dark:text-white sm:text-center sm:text-4xl xl:mb-16;
+}
+
+.journalpage header > div {
+  @apply flex items-center justify-between;
+}
+
+.journalpage header span.date {
+  @apply flex text-sm font-semibold text-gray-700 dark:text-tertiary;
+}
+
+.journalpage header .go-back-button {
+  @apply flex rounded-full text-sm font-semibold text-gray-700 transition hover:opacity-75 dark:text-tertiary;
+}
+
+.journalpage footer {
+  @apply mt-12 flex items-center justify-between border-t border-gray-200 py-2 text-xs text-gray-400 dark:border-gray-600 dark:text-gray-300 md:py-3 md:text-sm;
+}
+
+.journalpage footer > span {
+  @apply font-semibold text-gray-600 dark:text-gray-200 sm:text-center;
+}
+
+.journalpage img {
+  @apply w-full rounded-xl border-0 bg-transparent shadow;
+}
+
+.journalpage .gatsby-resp-image-wrapper {
+  margin: 2rem 0 !important;
+}

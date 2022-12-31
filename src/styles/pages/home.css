@@ -3,7 +3,8 @@
 }
 
 .home .markdown {
-  @apply mx-auto flex w-full flex-col justify-between text-left font-light leading-snug tracking-tight lg:text-justify;
+  @apply mx-auto flex w-full flex-col justify-between rounded text-left 
+  font-light leading-snug tracking-tight lg:text-justify;
 }
 
 .home .markdown a {
