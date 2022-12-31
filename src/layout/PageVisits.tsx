@@ -10,7 +10,7 @@ const PageVists = ({ visits }: Props) => {
     <div className="flex items-center justify-between">
       <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
         <span className="whitespace-nowrap">
-          Site Visits: <strong>{visits}</strong>
+          Page Visits: <strong>{visits}</strong>
         </span>
       </p>
     </div>
