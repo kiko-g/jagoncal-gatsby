@@ -1,5 +1,4 @@
 import React from 'react'
-import { InformationCircleIcon } from '@heroicons/react/outline'
 
 type Props = {
   visits: number

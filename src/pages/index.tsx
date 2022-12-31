@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, graphql } from 'gatsby'
-import { Layout, Seo, PageVisits } from '../layout'
-import { TranslateIcon } from '@heroicons/react/outline'
+import { Layout, Seo } from '../layout'
+import { LanguageIcon } from '@heroicons/react/24/outline'
 import '../styles/pages/home.css'
 
 const HomePage = ({
@@ -15,7 +15,7 @@ const HomePage = ({
   const links = [
     {
       name: 'Linkedin',
-      href: 'https://www.linkedin.com/in/${linkedinId}',
+      href: `https://www.linkedin.com/in/${linkedinId}`,
     },
     {
       name: 'Resume',
@@ -53,7 +53,7 @@ const HomePage = ({
             </ul>
           </div>
           <button onClick={toggleLanguage} className="rounded p-2 transition hover:opacity-80">
-            <TranslateIcon className="h-6 w-6 text-primary dark:text-tertiary" />
+            <LanguageIcon className="h-6 w-6 text-primary dark:text-tertiary" />
             <span>{language}</span>
           </button>
         </header>

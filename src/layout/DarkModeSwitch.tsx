@@ -1,6 +1,6 @@
 import React from 'react'
 import { Switch } from '@headlessui/react'
-import { MoonIcon, SunIcon } from '@heroicons/react/solid'
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import useDarkMode from '../hooks/useDarkMode'
 import classNames from 'classnames'
 
