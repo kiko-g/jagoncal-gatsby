@@ -66,7 +66,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `José Goncalves' personal website`,
-        short_name: `kikogoncalves`,
+        short_name: `jagoncal`,
         description: `José Goncalves, PhD and University Lecturer at FCUP, Porto, Portugal`,
         lang: `en`,
         start_url: `/`,

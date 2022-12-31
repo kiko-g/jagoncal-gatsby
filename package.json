@@ -22,7 +22,6 @@
     "gatsby-plugin-sharp": "^5.3.2",
     "gatsby-remark-classes": "^1.0.2",
     "gatsby-remark-emojis": "^0.4.3",
-    "gatsby-remark-highlight-code": "^3.2.0",
     "gatsby-remark-images": "^7.3.1",
     "gatsby-source-filesystem": "^5.3.1",
     "gatsby-transformer-remark": "^6.3.2",
@@ -61,9 +60,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kiko-g/kikogoncalves.me"
+    "url": "https://github.com/kiko-g/jagoncal"
   },
   "bugs": {
-    "url": "https://github.com/kiko-g/kikogoncalves.me/issues"
+    "url": "https://github.com/kiko-g/jagoncal/issues"
   }
 }
