@@ -60,13 +60,11 @@ const HomePage = ({
 
         {/* Presentation */}
         {nodes
-          .filter(
-            (edge: { node: { frontmatter: { language: string } } }) => edge.node.frontmatter.language === language
-          )
-          .map((edge: any, edgeIdx) => {
-            const content = edge.node.html
+          .filter((node: { frontmatter: { language: string } }) => node.frontmatter.language === language)
+          .map((node: any, nodeIdx: number) => {
+            const content = node.html
             return (
-              <article key={`article-${edgeIdx}`} className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
+              <article key={`article-${nodeIdx}`} className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
             )
           })}
       </main>
