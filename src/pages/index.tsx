@@ -63,9 +63,11 @@ const HomePage = ({
           .filter(
             (edge: { node: { frontmatter: { language: string } } }) => edge.node.frontmatter.language === language
           )
-          .map((edge: any) => {
+          .map((edge: any, edgeIdx) => {
             const content = edge.node.html
-            return <article className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
+            return (
+              <article key={`article-${edgeIdx}`} className="markdown" dangerouslySetInnerHTML={{ __html: content }} />
+            )
           })}
       </main>
     </Layout>

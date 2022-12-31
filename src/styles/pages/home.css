@@ -3,15 +3,15 @@
 }
 
 .home .markdown {
-  @apply mx-auto flex w-full flex-col justify-between font-normal;
+  @apply mx-auto flex w-full flex-col justify-between text-left font-light leading-snug tracking-tight lg:text-justify;
 }
 
 .home .markdown a {
-  @apply text-primary font-semibold transition hover:underline hover:opacity-90 dark:text-tertiary;
+  @apply font-semibold text-primary transition hover:underline hover:opacity-90 dark:text-tertiary;
 }
 
 .home .markdown p {
-  @apply mb-2 text-left lg:text-justify;
+  @apply mb-2;
 }
 
 .home .markdown h1,

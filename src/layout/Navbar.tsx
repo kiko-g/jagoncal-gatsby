@@ -92,7 +92,7 @@ const Header = ({ title, location }: Props) => (
           <button
             type="button"
             className={classNames(
-              'flex h-12 items-center justify-center font-medium capitalize tracking-wide transition hover:underline',
+              'flex h-12 items-center justify-center capitalize tracking-wide transition hover:underline',
               location === link.title
                 ? 'font-bold text-primary dark:text-white'
                 : 'text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-white'
@@ -114,7 +114,7 @@ const Mobile = ({ title, location }: Props) => (
         <button
           type="button"
           className={classNames(
-            'flex h-auto items-center justify-center font-medium capitalize tracking-wide transition',
+            'flex h-auto items-center justify-center capitalize tracking-wide transition',
             location === link.title
               ? 'text-primary dark:text-white'
               : 'text-gray-800/70 hover:text-gray-800 dark:text-white/60 dark:hover:text-white'

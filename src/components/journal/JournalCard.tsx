@@ -17,12 +17,15 @@ const JournalCard = ({ post }: Props) => {
 
   return (
     <Link
-      to={available ? post.frontmatter.slug : undefined}
+      to={post.frontmatter.slug}
+      onClick={e => {
+        if (!available) e.preventDefault()
+      }}
       className={classNames(
         'postcard group',
         available
           ? 'bg-lightest hover:bg-teal-800/20 hover:text-gray-800 dark:bg-light/5 dark:hover:bg-teal-800/50 dark:hover:text-white'
-          : 'bg-lightest dark:bg-light/5 hover:cursor-not-allowed'
+          : 'bg-lightest hover:cursor-not-allowed dark:bg-light/5'
       )}
     >
       <header>
