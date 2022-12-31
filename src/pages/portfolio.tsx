@@ -6,7 +6,7 @@ import '../styles/pages/portfolio.css'
 
 const PortfolioPage = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { nodes },
   },
 }) => {
   return (
@@ -19,7 +19,7 @@ const PortfolioPage = ({
         </header>
 
         <article>
-          {edges
+          {nodes
             .filter((edge: { node: { frontmatter: { startDate: any } } }) => !!edge.node.frontmatter.startDate)
             .map((edge: { node: { id: React.Key } }) => (
               <PortfolioEntry key={`project-${edge.node.id}`} project={edge.node} />
@@ -35,27 +35,25 @@ export default PortfolioPage
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(
-      sort: { order: [DESC, DESC], fields: [frontmatter___pinned, frontmatter___startDate] }
+      sort: [{ frontmatter: { pinned: DESC } }, { frontmatter: { startDate: DESC } }]
       filter: { fileAbsolutePath: { regex: "/(portfolio)/" } }
     ) {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            pinned
-            title
-            startDate(formatString: "MMM YYYY")
-            endDate(formatString: "MMM YYYY")
-            external
-            featuredImage {
-              childImageSharp {
-                gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
-              }
+      nodes {
+        id
+        html
+        frontmatter {
+          pinned
+          title
+          startDate(formatString: "MMM YYYY")
+          endDate(formatString: "MMM YYYY")
+          external
+          featuredImage {
+            childImageSharp {
+              gatsbyImageData(width: 800, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
             }
-            featuredVideo
-            description
           }
+          featuredVideo
+          description
         }
       }
     }

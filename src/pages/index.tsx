@@ -6,7 +6,7 @@ import '../styles/pages/home.css'
 
 const HomePage = ({
   data: {
-    allMarkdownRemark: { edges },
+    allMarkdownRemark: { nodes },
   },
 }) => {
   const email = process.env.GATSBY_EMAIL || 'jagoncal@fc.up.pt'
@@ -59,7 +59,7 @@ const HomePage = ({
         </header>
 
         {/* Presentation */}
-        {edges
+        {nodes
           .filter(
             (edge: { node: { frontmatter: { language: string } } }) => edge.node.frontmatter.language === language
           )
@@ -79,13 +79,11 @@ export default HomePage
 export const pageQuery = graphql`
   query {
     allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/(home)/" } }) {
-      edges {
-        node {
-          id
-          html
-          frontmatter {
-            language
-          }
+      nodes {
+        id
+        html
+        frontmatter {
+          language
         }
       }
     }
